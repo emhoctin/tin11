@@ -32,15 +32,14 @@ const App: React.FC = () => {
 
     // Initialize Gemini AI client
     useEffect(() => {
-        // Fix: Use `process.env.API_KEY` as per coding guidelines, which also resolves the TypeScript error on line 35.
-        const apiKey = process.env.API_KEY;
-        if (apiKey) {
-            const genAI = new GoogleGenAI({ apiKey });
-            setAi(genAI);
-        } else {
-            console.error("API_KEY environment variable not set.");
-        }
-    }, []);
+    const apiKey = import.meta.env.VITE_API_KEY;
+    if (apiKey) {
+        const genAI = new GoogleGenAI({ apiKey });
+        setAi(genAI);
+    } else {
+        console.error("API Key chưa được cấu hình.");
+    }
+}, []);
 
     const questionsByTopic = useMemo(() => {
         return MOCK_CS_QUESTIONS.reduce((acc, q) => {
