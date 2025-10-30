@@ -1411,7 +1411,7 @@ export const MOCK_CS_QUESTIONS: Question[] = [
     "options": [
       "Không vội thanh toán mà chưa xác minh, nhất là với yêu cầu chuyển tiền nhanh.",
       "Kiểm tra các đánh giá của người dùng, độ tin cậy của trang web.",
-      "Đừng cung cấp thông tin thẻ hoặc tài khoản.",
+      "Cung cấp thông tin thẻ hoặc tài khoản.",
       "Thực hiện theo yêu cầu để nhận khuyến mãi."
     ],
     "answerIndices": [0],
@@ -1527,14 +1527,14 @@ export const MOCK_CS_QUESTIONS: Question[] = [
   {
     "id": "q_cs_11_ud_09_12",
     "topicId": "topic_cs_11_ud_09",
-    "stem": "Việc nào KHÔNG NÊN LÀM khi tham gia mạng xã hội? (Chọn tất cả các đáp án đúng)",
+    "stem": "Việc nào NÊN LÀM khi tham gia mạng xã hội? (Chọn tất cả các đáp án đúng)",
     "options": [
       "Quảng cáo, kinh doanh dịch vụ trái phép.",
       "Sử dụng ngôn từ gây thù hận, phản cảm.",
       "Tung tin sai sự thật, xuyên tạc.",
       "Chia sẻ thông tin tích cực, chính thống."
     ],
-    "answerIndices": [0, 1, 2],
+    "answerIndices": [3],
     "difficulty": "Easy",
     "tags": ["Ứng xử mạng", "Đạo đức số"],
     "explanation_prompt": "Không nên tung tin sai lệch hoặc có lời lẽ phản cảm trên mạng xã hội."
